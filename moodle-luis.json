@@ -1,0 +1,114 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "moodle-luis",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "student-assignment-comparison-results"
+    },
+    {
+      "name": "student-due-assignments"
+    },
+    {
+      "name": "student-latest-grades"
+    },
+    {
+      "name": "teacher-absent-students"
+    },
+    {
+      "name": "teacher-incomplete-assignments"
+    },
+    {
+      "name": "teacher-last-student-login"
+    },
+    {
+      "name": "teacher-late-assignments"
+    },
+    {
+      "name": "teacher-late-students"
+    },
+    {
+      "name": "teacher-recent-students"
+    },
+    {
+      "name": "teacher-worst-students-last-assignment"
+    }
+  ],
+  "entities": [
+    {
+      "name": "name",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "how did i do in my latest assignments compared to the class",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "how many assignments have incomplete submissions?",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "what are the latest grades i've received?",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "what assignments are due next?",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "when did joe last log into moodle",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "name",
+          "startPos": 9,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "which assignments are running late?",
+      "intent": "teacher-late-assignments",
+      "entities": []
+    },
+    {
+      "text": "which students have been absent this month?",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "which students have logged in last to moodle?",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "which students have made late submissions?",
+      "intent": "teacher-late-students",
+      "entities": []
+    },
+    {
+      "text": "which students scored the least in the last assignment?",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    }
+  ]
+}
