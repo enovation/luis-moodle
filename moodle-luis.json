@@ -80,13 +80,46 @@
       "entities": []
     },
     {
-      "text": "when did joe last log into moodle",
+      "text": "when did Joe last log into moodle",
       "intent": "teacher-last-student-login",
       "entities": [
         {
           "entity": "name",
           "startPos": 9,
           "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "when did James last log into moodle",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "name",
+          "startPos": 9,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "when did Robert last log into moodle",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "name",
+          "startPos": 9,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "when did Mary last log into moodle",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "name",
+          "startPos": 9,
+          "endPos": 12
         }
       ]
     },
