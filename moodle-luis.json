@@ -18,6 +18,9 @@
       "name": "student-latest-grades"
     },
     {
+      "name": "teacher-assignments-for-grading"
+    },
+    {
       "name": "teacher-absent-students"
     },
     {
@@ -27,10 +30,7 @@
       "name": "teacher-last-student-login"
     },
     {
-      "name": "teacher-late-assignments"
-    },
-    {
-      "name": "teacher-late-students"
+      "name": "teacher-late-submissions"
     },
     {
       "name": "teacher-recent-students"
@@ -55,7 +55,7 @@
   "patterns": [],
   "utterances": [
     {
-      "text": "how did i do in my latest assignments compared to the class",
+      "text": "how did i do in my latest assignments compared to the class?",
       "intent": "student-assignment-comparison-results",
       "entities": []
     },
@@ -67,6 +67,11 @@
     {
       "text": "what are the latest grades i've received?",
       "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "what assignments are yet to be graded?",
+      "intent": "teacher-assignments-for-grading",
       "entities": []
     },
     {
@@ -86,11 +91,6 @@
       ]
     },
     {
-      "text": "which assignments are running late?",
-      "intent": "teacher-late-assignments",
-      "entities": []
-    },
-    {
       "text": "which students have been absent this month?",
       "intent": "teacher-absent-students",
       "entities": []
@@ -102,7 +102,7 @@
     },
     {
       "text": "which students have made late submissions?",
-      "intent": "teacher-late-students",
+      "intent": "teacher-late-submissions",
       "entities": []
     },
     {
