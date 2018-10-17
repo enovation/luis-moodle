@@ -1,6 +1,6 @@
 {
   "luis_schema_version": "3.0.0",
-  "versionId": "0.3",
+  "versionId": "0.4",
   "name": "moodle-luis",
   "desc": "",
   "culture": "en-us",
