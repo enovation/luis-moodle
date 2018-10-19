@@ -9,6 +9,9 @@
       "name": "None"
     },
     {
+      "name": "get-help"
+    },
+    {
       "name": "share-feedback"
     },
     {
@@ -159,6 +162,16 @@
     {
       "text": "How can I give feedback?",
       "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "I need help",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "Can you help me?",
+      "intent": "get-help",
       "entities": []
     }
   ]
