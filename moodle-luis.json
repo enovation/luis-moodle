@@ -9,6 +9,9 @@
       "name": "None"
     },
     {
+      "name": "share-feedback"
+    },
+    {
       "name": "student-assignment-comparison-results"
     },
     {
@@ -141,6 +144,21 @@
     {
       "text": "which students scored the least in the last assignment?",
       "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "share feedback",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "give feedback",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "How can I give feedback?",
+      "intent": "share-feedback",
       "entities": []
     }
   ]
