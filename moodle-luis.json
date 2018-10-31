@@ -1,15 +1,15 @@
 {
-  "luis_schema_version": "3.0.0",
+  "luis_schema_version": "3.1.0",
   "versionId": "0.5",
-  "name": "moodle-luis",
-  "desc": "",
+  "name": "enoms2bot3-a76a",
+  "desc": "Default Intents for Azure Bot Service V2",
   "culture": "en-us",
   "intents": [
     {
-      "name": "None"
+      "name": "get-help"
     },
     {
-      "name": "get-help"
+      "name": "None"
     },
     {
       "name": "share-feedback"
@@ -24,10 +24,10 @@
       "name": "student-latest-grades"
     },
     {
-      "name": "teacher-assignments-for-grading"
+      "name": "teacher-absent-students"
     },
     {
-      "name": "teacher-absent-students"
+      "name": "teacher-assignments-for-grading"
     },
     {
       "name": "teacher-incomplete-assignments"
@@ -47,7 +47,7 @@
   ],
   "entities": [
     {
-      "name": "name",
+      "name": "grades",
       "roles": []
     }
   ],
@@ -55,13 +55,113 @@
   "closedLists": [],
   "patternAnyEntities": [],
   "regex_entities": [],
-  "prebuiltEntities": [],
+  "prebuiltEntities": [
+    {
+      "name": "personName",
+      "roles": []
+    }
+  ],
   "model_features": [],
   "regex_features": [],
   "patterns": [],
   "utterances": [
     {
+      "text": "absent students",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "assignments",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "away students this month",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "can you compare my grades with other colleagues?",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "can you help me?",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "can you show me the grades of assignments compared with other students?",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "can you tell me what assignments are due for me?",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "compare latest assignments",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "contact",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "due assignments",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "give feedback",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "give me the list of upcoming assignments",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "grade assignments",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "hi there",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "how can i give feedback?",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
       "text": "how did i do in my latest assignments compared to the class?",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "how did i do?",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "how do i compare?",
       "intent": "student-assignment-comparison-results",
       "entities": []
     },
@@ -71,13 +171,148 @@
       "entities": []
     },
     {
-      "text": "what are the latest grades i've received?",
+      "text": "i need assignments list that are scheduled next",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "i need help",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "i need to know my latest marks",
       "intent": "student-latest-grades",
       "entities": []
     },
     {
-      "text": "what assignments are yet to be graded?",
+      "text": "i want to give feedback",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "incomplete assignments",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "incomplete grades",
       "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "incomplete submissions",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "issue",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "last login",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "last logins",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "last students",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "late submissions",
+      "intent": "teacher-late-submissions",
+      "entities": []
+    },
+    {
+      "text": "latest assignments compare",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "latest grades",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "mary jones login?",
+      "intent": "teacher-last-student-login",
+      "entities": []
+    },
+    {
+      "text": "next assignments",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "problem",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "report",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "share feedback",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "show me my latest grades",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "show me the list of next assignments",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "students that got worst marks in last assignments",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "students with delayed submissions",
+      "intent": "teacher-late-submissions",
+      "entities": []
+    },
+    {
+      "text": "students with lowest score in last assignment",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "students with overdue submissions",
+      "intent": "teacher-late-submissions",
+      "entities": []
+    },
+    {
+      "text": "tell me which students were not present this month?",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "to be graded",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "upcoming assignments",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "what are the latest grades i've received?",
+      "intent": "student-latest-grades",
       "entities": []
     },
     {
@@ -86,48 +321,94 @@
       "entities": []
     },
     {
-      "text": "when did Joe last log into moodle",
-      "intent": "teacher-last-student-login",
-      "entities": [
-        {
-          "entity": "name",
-          "startPos": 9,
-          "endPos": 11
-        }
-      ]
+      "text": "what assignments are yet to be graded?",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
     },
     {
-      "text": "when did James last log into moodle",
-      "intent": "teacher-last-student-login",
-      "entities": [
-        {
-          "entity": "name",
-          "startPos": 9,
-          "endPos": 13
-        }
-      ]
+      "text": "what assignments needs to be graded?",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
     },
     {
-      "text": "when did Robert last log into moodle",
-      "intent": "teacher-last-student-login",
-      "entities": [
-        {
-          "entity": "name",
-          "startPos": 9,
-          "endPos": 14
-        }
-      ]
+      "text": "what can i do?",
+      "intent": "get-help",
+      "entities": []
     },
     {
-      "text": "when did Mary last log into moodle",
+      "text": "what can you do?",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "what's my newest grades?",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "what's my recent grades?",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "what's my score of latest assignments comparing with others?",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "what's the incomplete assignments?",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "when did john walsh last log in?",
       "intent": "teacher-last-student-login",
-      "entities": [
-        {
-          "entity": "name",
-          "startPos": 9,
-          "endPos": 12
-        }
-      ]
+      "entities": []
+    },
+    {
+      "text": "when did mary last log in?",
+      "intent": "teacher-last-student-login",
+      "entities": []
+    },
+    {
+      "text": "when did tomasz last log into the moodle?",
+      "intent": "teacher-last-student-login",
+      "entities": []
+    },
+    {
+      "text": "when john logged",
+      "intent": "teacher-last-student-login",
+      "entities": []
+    },
+    {
+      "text": "when john logged in",
+      "intent": "teacher-last-student-login",
+      "entities": []
+    },
+    {
+      "text": "when mary jones was last time online?",
+      "intent": "teacher-last-student-login",
+      "entities": []
+    },
+    {
+      "text": "when tim jones last logged in?",
+      "intent": "teacher-last-student-login",
+      "entities": []
+    },
+    {
+      "text": "which assignments are running late?",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "which assignments do i need to grade?",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "which assignments missing marks?",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
     },
     {
       "text": "which students have been absent this month?",
@@ -148,31 +429,7 @@
       "text": "which students scored the least in the last assignment?",
       "intent": "teacher-worst-students-last-assignment",
       "entities": []
-    },
-    {
-      "text": "share feedback",
-      "intent": "share-feedback",
-      "entities": []
-    },
-    {
-      "text": "give feedback",
-      "intent": "share-feedback",
-      "entities": []
-    },
-    {
-      "text": "How can I give feedback?",
-      "intent": "share-feedback",
-      "entities": []
-    },
-    {
-      "text": "I need help",
-      "intent": "get-help",
-      "entities": []
-    },
-    {
-      "text": "Can you help me?",
-      "intent": "get-help",
-      "entities": []
     }
-  ]
+  ],
+  "settings": []
 }
