@@ -1,0 +1,414 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "0.1",
+  "name": "EnovationbotProtuguese",
+  "desc": "",
+  "culture": "pt-br",
+  "intents": [
+    {
+      "name": "get-help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "share-feedback"
+    },
+    {
+      "name": "student-assignment-comparison-results"
+    },
+    {
+      "name": "student-due-assignments"
+    },
+    {
+      "name": "student-latest-grades"
+    },
+    {
+      "name": "teacher-absent-students"
+    },
+    {
+      "name": "teacher-assignments-for-grading"
+    },
+    {
+      "name": "teacher-incomplete-assignments"
+    },
+    {
+      "name": "teacher-last-student-login"
+    },
+    {
+      "name": "teacher-latest-students"
+    },
+    {
+      "name": "teacher-late-submissions"
+    },
+    {
+      "name": "teacher-recent-students"
+    },
+    {
+      "name": "teacher-worst-students-last-assignment"
+    }
+  ],
+  "entities": [
+    {
+      "name": "firstname",
+      "roles": []
+    },
+    {
+      "name": "languageCode",
+      "roles": []
+    },
+    {
+      "name": "lastname",
+      "roles": []
+    }
+  ],
+  "composites": [
+    {
+      "name": "personName",
+      "children": [
+        "firstname",
+        "lastname"
+      ],
+      "roles": []
+    }
+  ],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "a corrigir",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "ajuda",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "alunos ausentes",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "ausente",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "ausentes",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "como eu me comparo",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "como foram minhas últimas tarefas comparadas com a turma?",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "comparar últimas tarefas",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "contato",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "ei",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "envios incompletos",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "feedback",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "mary jane",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "personName",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "firstname",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "personName",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "lastname",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "mary jane log in",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "personName",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "firstname",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "personName",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "lastname",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "mary jane login",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "personName",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "firstname",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "personName",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "lastname",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "nota baixa",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "nota mais baixa",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "nota mínima",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "notas",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "notas em andamento",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "notas para tarefas",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "novas tarefas",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "o que eu posso fazer",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "o que você pode fazer",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "oi",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "olá",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "problema",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "próximas tarefas",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "quais alunos faltaram esse mês?",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "quais alunos tiveram as notas mais baixas na última tarefa?",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "quais as últimas notas que eu recebi?",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "quais estudantes fizeram envios atrasados?",
+      "intent": "teacher-late-submissions",
+      "entities": []
+    },
+    {
+      "text": "quais os alunos que se logaram há mais tempo no moodle?",
+      "intent": "teacher-latest-students",
+      "entities": []
+    },
+    {
+      "text": "quais os alunos que se logaram recentemente no moodle?",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "quais os últimos alunos que se logaram no moodle?",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "quais são as próximas tarefas?",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "quais tarefas ainda não foram corrigidas?",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    },
+    {
+      "text": "quais tarefas estão atrasadas?",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "quando mary jane se logou no moodle pela última vez?",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "personName",
+          "startPos": 7,
+          "endPos": 10
+        },
+        {
+          "entity": "firstname",
+          "startPos": 7,
+          "endPos": 10
+        },
+        {
+          "entity": "personName",
+          "startPos": 12,
+          "endPos": 15
+        },
+        {
+          "entity": "lastname",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "quantas tarefas estão incompletas?",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "relatório or reportar",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "tarefas",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "tarefas atrasadas",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "tarefas incompletas",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "últimas notas",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "últimas tarefas comparam",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "último login",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "últimos alunos",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "últimos logins",
+      "intent": "teacher-recent-students",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
