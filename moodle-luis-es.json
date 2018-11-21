@@ -1,0 +1,171 @@
+{
+  "luis_schema_version": "3.1.0",
+  "versionId": "0.3",
+  "name": "ES",
+  "desc": "",
+  "culture": "es-es",
+  "intents": [
+    {
+      "name": "get-help"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "share-feedback"
+    },
+    {
+      "name": "student-assignment-comparison-results"
+    },
+    {
+      "name": "student-due-assignments"
+    },
+    {
+      "name": "student-latest-grades"
+    },
+    {
+      "name": "teacher-absent-students"
+    },
+    {
+      "name": "teacher-assignments-for-grading"
+    },
+    {
+      "name": "teacher-incomplete-assignments"
+    },
+    {
+      "name": "teacher-last-student-login"
+    },
+    {
+      "name": "teacher-latest-students"
+    },
+    {
+      "name": "teacher-late-submissions"
+    },
+    {
+      "name": "teacher-recent-students"
+    },
+    {
+      "name": "teacher-worst-students-last-assignment"
+    }
+  ],
+  "entities": [
+    {
+      "name": "firstname",
+      "roles": []
+    },
+    {
+      "name": "languageCode",
+      "roles": []
+    },
+    {
+      "name": "lastname",
+      "roles": []
+    }
+  ],
+  "composites": [
+    {
+      "name": "personName",
+      "children": [
+        "firstname",
+        "lastname"
+      ],
+      "roles": []
+    }
+  ],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "¿cómo lo hice en mis últimas tareas en comparación con la clase?",
+      "intent": "student-assignment-comparison-results",
+      "entities": []
+    },
+    {
+      "text": "¿qué tareas se deben entregar próximamente?",
+      "intent": "student-due-assignments",
+      "entities": []
+    },
+    {
+      "text": "cuáles son las últimas calificaciones que he recibido",
+      "intent": "student-latest-grades",
+      "entities": []
+    },
+    {
+      "text": "cuántas tareas tienen entregas incompletas",
+      "intent": "teacher-incomplete-assignments",
+      "entities": []
+    },
+    {
+      "text": "feedback",
+      "intent": "share-feedback",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "get-help",
+      "entities": []
+    },
+    {
+      "text": "mary jane log in",
+      "intent": "teacher-last-student-login",
+      "entities": [
+        {
+          "entity": "personName",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "firstname",
+          "startPos": 0,
+          "endPos": 3
+        },
+        {
+          "entity": "personName",
+          "startPos": 5,
+          "endPos": 8
+        },
+        {
+          "entity": "lastname",
+          "startPos": 5,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "quais os alunos que se logaram recentemente no moodle?",
+      "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "qué estudiantes han entregado tareas tarde",
+      "intent": "teacher-late-submissions",
+      "entities": []
+    },
+    {
+      "text": "qué estudiantes han faltado este mes",
+      "intent": "teacher-absent-students",
+      "entities": []
+    },
+    {
+      "text": "qué estudiantes han iniciado sesión más recientemente en moodle",
+      "intent": "teacher-latest-students",
+      "entities": []
+    },
+    {
+      "text": "qué estudiantes obtuvieron la menor calificación en la última tarea",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "qué tareas aún no se han calificado",
+      "intent": "teacher-assignments-for-grading",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
