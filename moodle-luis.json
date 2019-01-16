@@ -1,9 +1,10 @@
 {
-  "luis_schema_version": "3.1.0",
-  "versionId": "0.5",
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.6",
   "name": "Enovationbot1-aa7b",
   "desc": "A BotBuilder generated bot",
   "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
   "intents": [
     {
       "name": "get-help"
@@ -36,6 +37,9 @@
       "name": "teacher-last-student-login"
     },
     {
+      "name": "teacher-latest-students"
+    },
+    {
       "name": "teacher-late-submissions"
     },
     {
@@ -48,6 +52,10 @@
   "entities": [
     {
       "name": "grades",
+      "roles": []
+    },
+    {
+      "name": "languageCode",
       "roles": []
     }
   ],
@@ -241,6 +249,31 @@
       "entities": []
     },
     {
+      "text": "latest logged in students",
+      "intent": "teacher-latest-students",
+      "entities": []
+    },
+    {
+      "text": "latest students",
+      "intent": "teacher-latest-students",
+      "entities": []
+    },
+    {
+      "text": "least score",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "low score",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
+      "text": "lowest score",
+      "intent": "teacher-worst-students-last-assignment",
+      "entities": []
+    },
+    {
       "text": "mary jones login?",
       "intent": "teacher-last-student-login",
       "entities": []
@@ -418,6 +451,11 @@
     {
       "text": "which students have logged in last to moodle?",
       "intent": "teacher-recent-students",
+      "entities": []
+    },
+    {
+      "text": "which students have logged in latest to moodle?",
+      "intent": "teacher-latest-students",
       "entities": []
     },
     {
